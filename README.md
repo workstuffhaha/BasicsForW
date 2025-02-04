@@ -1,18 +1,5 @@
 # BasicsForW
 
-## apis
-
-Imagine you’re at a restaurant. You sit at a table, look at the menu, and order a pizza. The waiter takes your order to the kitchen, where the chef makes the pizza and gives it back to the waiter, who then serves it to you.  
-
-An **API (Application Programming Interface)** is like that waiter! It takes your request (like ordering pizza), goes to the kitchen (a server or database), gets what you need, and brings it back to you.  
-
-For example, when you use a weather app, it asks an API for the latest weather updates, and the API sends the information back to your phone. APIs help apps, websites, and computers talk to each other and share data easily! 😊
-
-follow whichever you like
-
-[https://www.youtube.com/watch?v=XGa4onZP66Q] (api basics -1, hindi video)
-[https://www.youtube.com/watch?v=s7wmiS2mSXY] (api basics -2, english video)
-
 ## frontend/ui
 
 Imagine you’re playing a video game. Everything you see on the screen—buttons, characters, menus, and scores—is the **frontend** or **UI (User Interface)**.  
@@ -96,40 +83,7 @@ The model uses a special S-shaped curve called the **sigmoid function** to make 
 
 So, Logistic Regression helps computers **classify things** into two categories—like **win or lose**, **spam or not spam**, or **sick or healthy**! ⚽📊
 
-## the architecture over-view
 
-Alright, let me break this down for you in a simple way! We’ll go step by step, imagining how everything works in a chatbot-like app with a machine learning model to predict brain tumors.
-
-### 1. **Frontend (Website)**
-Think of the **frontend** as the part you see and interact with — the website. It’s built with HTML (like the skeleton of a web page) and probably some other cool tools like JavaScript to make it more interactive.
-
-- On this webpage, you might see a form asking for certain inputs, like test results, medical data, or images (like values that could help predict if there’s a brain tumor).
-- You type or upload the data into these fields.
-
-### 2. **Sending Data to the Backend (API)**
-Once you hit a **"Submit"** button on the webpage, the data you entered gets sent to the **backend**. The backend is like the brain of the application, where all the hard work is done.
-
-- To send this data, the frontend uses **API requests**. An API is like a messenger that lets different parts of the app talk to each other.
-- The frontend sends a request to the backend, asking it to make a prediction. This happens using **FastAPI**, which is a fast and simple tool for creating these API endpoints (like doorways where data can enter and exit).
-
-### 3. **API Receives Data**
-When the API gets the request from the frontend, it **takes** the data and passes it to the **Machine Learning model**. The model is the one that actually predicts whether there’s a brain tumor or not.
-
-### 4. **Model Makes a Prediction**
-- The **Logistic Regression Model** (your machine learning model) takes the data it received and runs it through its logic (the mathematical rules it learned from past data).
-- The model looks at the values you gave it, does the math, and then predicts if there’s a **brain tumor** or not.
-
-### 5. **Sending Response Back**
-Once the model finishes making the prediction, it sends back the result to the backend API. The result could be something like "Tumor Present" or "No Tumor."
-
-### 6. **Frontend Receives the Response**
-The API then sends that prediction back to the frontend. The frontend (the webpage) **shows** you the result, so you can see whether the model thinks there’s a brain tumor or not.
-
-### In Summary:
-- **Frontend (HTML/JavaScript)**: You enter data.
-- **API (FastAPI)**: Takes your data and sends it to the model.
-- **Model (Logistic Regression)**: Makes the prediction (whether a brain tumor is present or not).
-- **API (FastAPI)**: Sends the result back.
 - **Frontend**: Shows you the result!
 
 It’s like a system where the frontend is the “face” of the app, the backend is the “brain,” and the model is the “mind” that makes decisions based on what it’s learned.
